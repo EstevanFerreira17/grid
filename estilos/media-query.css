@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    .container {
+        width: 600px;
+        height: 480px;
+
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 50px 
+        165px 165px 50px;
+        grid-template-areas: "header header header"
+        "aside main section"
+        "aside main section"
+        "footer footer footer";
+        align-content: space-around;
+        gap: 10px;
+    }
+
+    header {
+        grid-area: header;
+        position: relative;
+    }
+
+    header p#header {
+        display: none;
+        position: absolute;
+    }
+
+    header p.txt {    
+        display: block;
+        padding: 50px;
+    }
+
+    main::after {
+        content: "ola";
+    }
+
+    main {
+        grid-area: main;
+        align-items: flex-start;
+    }
+
+    section {
+        grid-area: section;
+        align-items: flex-start;
+    }
+
+    aside {
+        grid-area: aside;
+        align-items: flex-start;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
