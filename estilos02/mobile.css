@@ -33,6 +33,10 @@ p {
     text-indent: 20px;
 }
 
+p#vire {
+    color: rgb(250, 55, 55);
+}
+
 section#grid {
     display: grid;
     grid-template: repeat(6, 250px) / 1fr;
@@ -40,7 +44,7 @@ section#grid {
     gap: 10px;
 
     width: 300px;
-    background-color: #050101e8;
+    background-color: #050101b2;
     padding: 10px;
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.377);
     border-radius: 10px;
@@ -94,6 +98,10 @@ section > h2 {
 section > ol > li {
     padding: 20px 10px;
     text-align: left;
+}
+
+ol > li:nth-child(even) {
+    background-color: rgba(230, 230, 0, 0.788);
 }
 
 section > ol > li > p {

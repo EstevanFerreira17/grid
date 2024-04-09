@@ -32,9 +32,37 @@ body{
     section#grid {
         width: 900px;
         height: 600px;
-        grid-template-columns: 1fr 400px 1fr;
-        grid-template-rows: 200px 1fr;
+        grid-template-columns: 1fr 1fr 400px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "d1 d1 d2"
+        "d3 d4 d4"
+        "d5 d6 d6" ;
         grid-auto-rows: 1fr;
+    }
+    
+    div#um {
+        grid-area: d1;
+    }
+
+    div#dois {
+        grid-area: d2;
+    }
+
+    div#tres {
+        grid-area: d3;
+    }
+
+    div#quatro {
+        grid-area: d4;
+    }
+
+    div#cinco {
+        grid-area: d5;
+    }
+
+    div#seis {
+        grid-area: d6;
     }
 }
 
