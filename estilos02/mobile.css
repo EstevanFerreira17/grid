@@ -108,12 +108,12 @@ div#seis {
 
 div#botao {
     position: fixed;
-    left: 89%;
+    left: 85%;
     top: 75%;
 
     background-color: aqua;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -159,4 +159,5 @@ footer {
 footer p {
     margin: 0px;
     padding-top: 10px;
+    font: normal 0.8em Times;
 }
