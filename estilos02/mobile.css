@@ -12,7 +12,8 @@ body{
 
 main {
     width: 400px;
-    font-size: 2em;
+    font-size: 1em;
+    line-height: 40px;
     background-color: white;
     margin: auto;
     padding: 20px;
