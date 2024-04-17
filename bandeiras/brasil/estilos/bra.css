@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/08/19/30/rio-de-janeiro-1963744_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main#fundo-verde {
+    width: 630px;
+    height: 426px;
+    background-color: rgb(5, 99, 5);
+    background-image: linear-gradient(to top, green, rgb(1, 65, 1));
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.685);
+}
+
+div#pt-amarela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(150deg) skew(30deg);
+
+    width: 300px;
+    height: 260px;
+    background-color: rgb(238, 182, 0);
+}
+
+div#bola-azul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgb(38, 1, 173);
+    background-image: url('https://img.freepik.com/vetores-premium/fundo-azul-estrelado-ceu-noturno-estrelado-espaco-roxo-realista-luz-de-poeira-estelar-nebulosa-da-galaxia-vector_751643-261.jpg');
+    border-radius: 50%;
+
+    overflow: hidden;
+    opacity: 1;
+}
+
+div#faixa {
+    position: absolute;
+    transform: translateY(55px) translateX(-115px);
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 20px solid #fff;
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+}
+
+div#faixa > p#ordem {
+    transform: translateX(40px) translateY(-18px) rotate(-4deg);
+    left: 50%;
+    color: green;
+    font: normal 1em Arial;
+}
+
+div#faixa > p#e {
+    transform: translateX(48px) translateY(-18px) rotate(-4deg);
+    left: 50%;
+    color: green;
+    font: normal 1em Arial;
+}
+
+div#faixa > p#progresso {
+    transform: translateX(50px) translateY(1px) rotate(24deg);
+    left: 50%;
+    color: green;
+    font: normal 1em Arial;
+}

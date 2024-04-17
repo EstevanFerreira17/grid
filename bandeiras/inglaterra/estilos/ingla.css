@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: -1px;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #000d80;
+    --vermei: #c50202;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    background-image: url('https://img.freepik.com/fotos-gratis/famosa-tower-bridge-a-noite-londres-inglaterra_268835-1390.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    position: absolute;
+    width: 630px;
+    height: 390px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px #000000c5;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+div#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "um dois"
+    "tres quatro";
+    gap: 60px;
+
+    transform: translate(-50%, -50%) rotate(45deg) skew(-14deg,  -14deg) scale(1.2);
+
+    opacity: 1;
+}
+
+div#b1 {
+    background-color: var(--azul);
+    grid-area: um;
+}
+
+div#b2 {
+    background-color: var(--azul);
+    grid-area: dois;
+    
+}
+
+div#b3 {
+    background-color: var(--azul);
+    grid-area: tres;
+}
+
+div#b4 {
+    background-color: var(--azul);
+    grid-area: quatro;
+}
+
+

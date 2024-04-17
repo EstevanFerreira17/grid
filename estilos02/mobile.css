@@ -121,6 +121,8 @@ div:active {
     background-color: rgb(3, 80, 80);
 }
 
+p::selection {background-color: #111111;color: white;}
+
 section > h2 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*CRUZ-VERMELHA*/
+
+div#cruz-vermelha1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 631px;
+    height: 391px;
+    opacity: 1;
+
+    display: grid;
+    grid-template: 1fr 50px 1fr / 1fr 50px 1fr;
+    grid-template-areas:
+    "c-um   c-sete c-dois"
+    "c-tres c-sete c-quatro"
+    "c-cinco c-sete c-seis";
+}
+
+
+div#c1 {
+    background-color: transparent;
+    grid-area: c-um;
+    border-bottom: 20px solid white;
+    border-right: 20px solid white;
+
+    /*linha interna red*/
+
+}
+
+div#c2 {
+    background-color: transparent;
+    grid-area: c-dois;
+    border-bottom: 20px solid white;
+    border-left: 20px solid white;
+}
+
+div#c3 {
+    background-color: var(--vermei);
+    grid-area: c-tres;
+}
+
+div#c4 {
+    background-color: var(--vermei);
+    grid-area: c-quatro;
+}
+
+div#c5 {
+    background-color: transparent;
+    grid-area: c-cinco;
+    border-top: 20px solid white;
+    border-right: 20px solid white;
+}
+
+div#c6 {
+    background-color: transparent;
+    grid-area: c-seis;
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+}
+
+div#c7 {
+    background-color: var(--vermei);
+    grid-area: c-sete;
+}

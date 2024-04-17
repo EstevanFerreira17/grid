@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+:root {
+    --red: #c50202;
+}
+
+
+div#l-1 {
+    position: absolute;
+    height: 17px;
+    width: 300px;
+    background-color: var(--red);
+    transform: rotate(31deg) translateY(82px) skew(-60deg);
+}
+
+div#l-2 {
+    position: absolute;
+    height: 17px;
+    width: 300px;
+    background-color: var(--red);
+    transform: rotate(-31deg) translateX(-39px) translateY(54px) skew(60deg);
+}
+
+div#l-5 {
+    position: absolute;
+    height: 17px;
+    width: 290px;
+    background-color: var(--red);
+    transform: rotate(-31deg) translateX(-50px) translateY(52px) skew(60deg);
+}
+
+div#l-6 {
+    position: absolute;
+    height: 17px;
+    width: 300px;
+    background-color: var(--red);
+    transform: rotate(31deg) translateX(56px) translateY(47px) skew(-60deg);
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(133, 131, 131);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    width: 630px;
+    height: 50%;
+    background-color: white;
+
+    display: grid;
+    grid-template: 1fr 100px 1fr / 1fr;
+    gap: 32px;
+    overflow: hidden;
+}
+
+div.red {
+    background-color: red;
+}
+
+div.green {
+    background-color: green;
+}
+
+div.blue {
+    background-color: blue;
+}
+
+div.bl-yell {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    background-color: rgb(10, 90, 10);
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%) scale(1.5) skew(30deg) rotate(47deg) ;
+}
